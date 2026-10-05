@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Irrigation Management - GreenHarvest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel=stylesheet href=css/responsive.css>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">GreenHarvest</a>
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="seedlings.html">Seedlings</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="marketplace.html">Market</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+        <a href="dashboard.html" class="btn">
+            Dashboard
+        </a>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <h1>Irrigation Management</h1>
+
+        <p>
+            Manage water supply and irrigation activities for your avocado farm.
+        </p>
+
+    </section>
+
+
+    <!-- Irrigation Overview -->
+
+    <section class="info-section">
+
+        <h2>Avocado Irrigation Management</h2>
+
+        <p>
+            Proper irrigation is important for healthy avocado trees,
+            especially during dry periods. GreenHarvest helps farmers
+            plan and manage their irrigation activities.
+        </p>
+
+    </section>
+
+
+    <!-- Irrigation Methods -->
+
+    <section class="services-grid">
+
+        <div class="service-card">
+
+            <h3>💧 Drip Irrigation</h3>
+
+            <p>
+                Deliver water directly to the root zone of avocado trees
+                while reducing water wastage.
+            </p>
+
+            <button class="btn">
+                Learn More
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h3>🚿 Sprinkler Irrigation</h3>
+
+            <p>
+                Use sprinkler systems to distribute water across the farm
+                where appropriate.
+            </p>
+
+            <button class="btn">
+                Learn More
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h3>🌧️ Rainwater Management</h3>
+
+            <p>
+                Plan how to collect and use available rainwater for
+                avocado farming.
+            </p>
+
+            <button class="btn">
+                Learn More
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <h3>📊 Irrigation Scheduling</h3>
+
+            <p>
+                Develop an irrigation schedule based on farm conditions,
+                tree age and weather conditions.
+            </p>
+
+            <button class="btn">
+                Create Schedule
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Irrigation Request Form -->
+
+    <section class="form-section">
+
+        <form id="irrigationForm">
+
+            <h2>Request Irrigation Support</h2>
+
+            <label for="farmerName">
+                Farmer Name
+            </label>
+
+            <input
+                type="text"
+                id="farmerName"
+                name="farmerName"
+                placeholder="Enter your full name"
+                required
+            >
+
+
+            <label for="phone">
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="e.g. 0712345678"
+                required
+            >
+
+
+            <label for="farmLocation">
+                Farm Location
+            </label>
+
+            <input
+                type="text"
+                id="farmLocation"
+                name="farmLocation"
+                placeholder="Enter farm location"
+                required
+            >
+
+
+            <label for="farmSize">
+                Farm Size (Acres)
+            </label>
+
+            <input
+                type="number"
+                id="farmSize"
+                name="farmSize"
+                min="0"
+                step="0.1"
+                placeholder="Enter farm size"
+                required
+            >
+
+
+            <label for="irrigationType">
+                Current Irrigation System
+            </label>
+
+            <select
+                id="irrigationType"
+                name="irrigationType"
+                required
+            >
+
+                <option value="">
+                    Select irrigation system
+                </option>
+
+                <option value="drip">
+                    Drip Irrigation
+                </option>
+
+                <option value="sprinkler">
+                    Sprinkler Irrigation
+                </option>
+
+                <option value="manual">
+                    Manual Irrigation
+                </option>
+
+                <option value="rainwater">
+                    Rainwater
+                </option>
+
+                <option value="none">
+                    No Irrigation System
+                </option>
+
+            </select>
+
+
+            <label for="waterSource">
+                Main Water Source
+            </label>
+
+            <select
+                id="waterSource"
+                name="waterSource"
+            >
+
+                <option value="">
+                    Select water source
+                </option>
+
+                <option value="borehole">
+                    Borehole
+                </option>
+
+                <option value="river">
+                    River
+                </option>
+
+                <option value="dam">
+                    Dam
+                </option>
+
+                <option value="water-tank">
+                    Water Tank
+                </option>
+
+                <option value="rain">
+                    Rainwater
+                </option>
+
+                <option value="other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <label for="trees">
+                Number of Avocado Trees
+            </label>
+
+            <input
+                type="number"
+                id="trees"
+                name="trees"
+                min="0"
+                placeholder="Number of trees"
+            >
+
+
+            <label for="waterProblem">
+                Irrigation Problem
+            </label>
+
+            <select
+                id="waterProblem"
+                name="waterProblem"
+            >
+
+                <option value="">
+                    Select problem
+                </option>
+
+                <option value="insufficient-water">
+                    Insufficient Water
+                </option>
+
+                <option value="system-failure">
+                    Irrigation System Failure
+                </option>
+
+                <option value="high-cost">
+                    High Irrigation Cost
+                </option>
+
+                <option value="scheduling">
+                    Irrigation Scheduling
+                </option>
+
+                <option value="installation">
+                    Need New Irrigation System
+                </option>
+
+                <option value="other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <label for="description">
+                Additional Information
+            </label>
+
+            <textarea
+                id="description"
+                name="description"
+                rows="5"
+                placeholder="Describe your irrigation needs or problem..."
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="btn"
+            >
+                Submit Irrigation Request
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Irrigation Tips -->
+
+    <section class="info-section">
+
+        <h2>Irrigation Tips for Avocado Farmers</h2>
+
+        <div class="info-grid">
+
+            <div>
+
+                <h3>💧 Monitor Soil Moisture</h3>
+
+                <p>
+                    Check soil moisture regularly to avoid both
+                    water stress and excessive watering.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>🌱 Consider Tree Age</h3>
+
+                <p>
+                    Young avocado trees generally require different
+                    irrigation management from mature trees.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>☀️ Monitor Dry Periods</h3>
+
+                <p>
+                    Adjust irrigation schedules during prolonged
+                    dry periods to protect your avocado trees.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>🌧️ Use Rainfall Wisely</h3>
+
+                <p>
+                    Take advantage of rainfall and avoid unnecessary
+                    irrigation when sufficient natural moisture is available.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 GreenHarvest Avocado Company.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/irrigation.js"></script>
+
+</body>
+</html>
