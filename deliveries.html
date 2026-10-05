@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliveries - GreenHarvest Avocado Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel=stylesheet href=css/responsive.css>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">GreenHarvest Avocado Company</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="seedlings.html">Seedlings</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="avocado-marketplace.html">Market</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Delivery Management</h1>
+    <p>
+        Request, manage and track deliveries of seedlings, farm inputs
+        and avocado produce.
+    </p>
+</section>
+
+<section class="info-section">
+
+    <h2>Delivery Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Seedling Delivery</h3>
+            <p>
+                Get avocado seedlings delivered directly to your farm
+                or preferred location.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Farm Input Delivery</h3>
+            <p>
+                Receive approved farm inputs and agricultural supplies
+                at your farm.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Avocado Produce Collection</h3>
+            <p>
+                Arrange collection of harvested avocado produce from
+                your farm.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Market Delivery</h3>
+            <p>
+                Support the movement of avocado produce from farmers
+                to buyers and markets.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="form-section">
+
+    <h2>Request a Delivery</h2>
+
+    <form id="deliveryForm">
+
+        <label for="customerName">Name</label>
+        <input
+            type="text"
+            id="customerName"
+            name="customerName"
+            required
+        >
+
+        <label for="phone">Phone Number</label>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+        >
+
+        <label for="deliveryType">Delivery Type</label>
+
+        <select id="deliveryType" name="deliveryType" required>
+            <option value="">-- Select Delivery Type --</option>
+            <option value="seedlings">Seedlings</option>
+            <option value="farm-inputs">Farm Inputs</option>
+            <option value="avocado-produce">Avocado Produce</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="orderNumber">Order Number</label>
+        <input
+            type="text"
+            id="orderNumber"
+            name="orderNumber"
+            placeholder="Example: GH-1001"
+        >
+
+        <label for="pickupLocation">Pickup Location</label>
+        <input
+            type="text"
+            id="pickupLocation"
+            name="pickupLocation"
+            required
+        >
+
+        <label for="deliveryLocation">Delivery Location</label>
+        <input
+            type="text"
+            id="deliveryLocation"
+            name="deliveryLocation"
+            required
+        >
+
+        <label for="deliveryDate">Preferred Delivery Date</label>
+        <input
+            type="date"
+            id="deliveryDate"
+            name="deliveryDate"
+        >
+
+        <label for="deliveryNotes">Additional Instructions</label>
+        <textarea
+            id="deliveryNotes"
+            name="deliveryNotes"
+            rows="5"
+            placeholder="Enter any special delivery instructions..."
+        ></textarea>
+
+        <button type="submit" class="btn">
+            Request Delivery
+        </button>
+
+        <p id="deliveryMessage"></p>
+
+    </form>
+
+</section>
+
+<section class="info-section">
+
+    <h2>Delivery Tracking</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>GH-DL-1001</h3>
+            <p><strong>Item:</strong> Hass Seedlings</p>
+            <p><strong>Destination:</strong> Embu</p>
+            <p><strong>Status:</strong> Processing</p>
+        </div>
+
+        <div class="service-card">
+            <h3>GH-DL-1002</h3>
+            <p><strong>Item:</strong> Farm Inputs</p>
+            <p><strong>Destination:</strong> Meru</p>
+            <p><strong>Status:</strong> In Transit</p>
+        </div>
+
+        <div class="service-card">
+            <h3>GH-DL-1003</h3>
+            <p><strong>Item:</strong> Avocado Produce</p>
+            <p><strong>Destination:</strong> Nairobi</p>
+            <p><strong>Status:</strong> Delivered</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="info-section">
+
+    <h2>Delivery Process</h2>
+
+    <div class="info-grid">
+
+        <div>
+            <h3>1. Request</h3>
+            <p>
+                Submit your delivery request with pickup and destination
+                information.
+            </p>
+        </div>
+
+        <div>
+            <h3>2. Confirmation</h3>
+            <p>
+                The delivery team reviews and confirms the request.
+            </p>
+        </div>
+
+        <div>
+            <h3>3. Dispatch</h3>
+            <p>
+                Your order is prepared and dispatched for delivery.
+            </p>
+        </div>
+
+        <div>
+            <h3>4. Delivered</h3>
+            <p>
+                The delivery status is updated after the item reaches
+                its destination.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 GreenHarvest Avocado Company. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

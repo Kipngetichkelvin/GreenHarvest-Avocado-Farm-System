@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments - GreenHarvest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel=stylesheet href=css/responsive.css>
+    <link rel=stylesheet href=css/form.css>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">GreenHarvest</a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="seedlings.html">Seedlings</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="marketplace.html">Market</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a href="buyer-dashboard.html" class="btn">Dashboard</a>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+
+        <h1>Payments</h1>
+
+        <p>
+            Make secure payments for your GreenHarvest orders and
+            view your payment history.
+        </p>
+
+    </section>
+
+
+    <!-- PAYMENT FORM -->
+    <section class="form-section">
+
+        <h2>Make a Payment</h2>
+
+        <form id="paymentForm">
+
+            <label for="orderNumber">Order Number</label>
+
+            <input
+                type="text"
+                id="orderNumber"
+                name="orderNumber"
+                placeholder="Example: GH-1001"
+                required
+            >
+
+
+            <label for="amount">Amount (KES)</label>
+
+            <input
+                type="number"
+                id="amount"
+                name="amount"
+                min="1"
+                placeholder="Enter amount"
+                required
+            >
+
+
+            <label for="paymentMethod">Payment Method</label>
+
+            <select
+                id="paymentMethod"
+                name="paymentMethod"
+                required
+            >
+
+                <option value="">-- Select Payment Method --</option>
+
+                <option value="mpesa">
+                    M-Pesa
+                </option>
+
+                <option value="card">
+                    Debit / Credit Card
+                </option>
+
+                <option value="bank">
+                    Bank Transfer
+                </option>
+
+            </select>
+
+
+            <label for="phone">M-Pesa Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="07XXXXXXXX"
+            >
+
+
+            <label for="transactionReference">
+                Transaction Reference
+            </label>
+
+            <input
+                type="text"
+                id="transactionReference"
+                name="transactionReference"
+                placeholder="Enter transaction reference if already paid"
+            >
+
+
+            <button type="submit" class="btn">
+                Proceed to Payment
+            </button>
+
+            <p id="paymentMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- PAYMENT INFORMATION -->
+    <section class="info-section">
+
+        <h2>Payment Information</h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <h3>📱 M-Pesa</h3>
+
+                <p>
+                    Pay conveniently using your registered M-Pesa
+                    mobile number.
+                </p>
+
+                <p>
+                    <strong>Paybill:</strong> 000000
+                </p>
+
+                <p>
+                    <strong>Account:</strong> GreenHarvest
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>💳 Card Payment</h3>
+
+                <p>
+                    Debit and credit card payments will be supported
+                    through the secure payment gateway.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>🏦 Bank Transfer</h3>
+
+                <p>
+                    Customers can make payments through the
+                    GreenHarvest bank account.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAYMENT HISTORY -->
+    <section class="info-section">
+
+        <h2>Payment History</h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <h3>GH-PAY-1001</h3>
+
+                <p>
+                    <strong>Order:</strong> GH-1001
+                </p>
+
+                <p>
+                    <strong>Amount:</strong> KES 7,500
+                </p>
+
+                <p>
+                    <strong>Method:</strong> M-Pesa
+                </p>
+
+                <p>
+                    <strong>Status:</strong> Successful
+                </p>
+
+                <p>
+                    <strong>Date:</strong> 04 October 2026
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>GH-PAY-1002</h3>
+
+                <p>
+                    <strong>Order:</strong> GH-0998
+                </p>
+
+                <p>
+                    <strong>Amount:</strong> KES 2,000
+                </p>
+
+                <p>
+                    <strong>Method:</strong> M-Pesa
+                </p>
+
+                <p>
+                    <strong>Status:</strong> Successful
+                </p>
+
+                <p>
+                    <strong>Date:</strong> 02 October 2026
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>GH-PAY-1003</h3>
+
+                <p>
+                    <strong>Order:</strong> GH-0987
+                </p>
+
+                <p>
+                    <strong>Amount:</strong> KES 3,900
+                </p>
+
+                <p>
+                    <strong>Method:</strong> Bank Transfer
+                </p>
+
+                <p>
+                    <strong>Status:</strong> Successful
+                </p>
+
+                <p>
+                    <strong>Date:</strong> 30 September 2026
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAYMENT SAFETY -->
+    <section class="info-section">
+
+        <h2>Payment Safety</h2>
+
+        <div class="info-grid">
+
+            <div>
+                <h3>🔒 Secure Payments</h3>
+
+                <p>
+                    Payment information should be processed through
+                    secure payment services.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>📋 Keep Your Reference</h3>
+
+                <p>
+                    Always keep your M-Pesa or payment transaction
+                    reference for future verification.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>⚠️ Verify Your Order</h3>
+
+                <p>
+                    Confirm your order number and payment amount
+                    before completing a transaction.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NAVIGATION -->
+    <section class="info-section">
+
+        <h2>Payment Options</h2>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <h3>📦 My Orders</h3>
+
+                <p>
+                    Check your orders before making a payment.
+                </p>
+
+                <a href="orders.html" class="btn">
+                    View Orders
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>🚚 Deliveries</h3>
+
+                <p>
+                    Track deliveries associated with your orders.
+                </p>
+
+                <a href="deliveries.html" class="btn">
+                    Track Deliveries
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <h3>👤 Dashboard</h3>
+
+                <p>
+                    Return to your buyer dashboard.
+                </p>
+
+                <a href="buyer-dashboard.html" class="btn">
+                    Go to Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 GreenHarvest Avocado Company.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/payments.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,355 @@
+/* =====================================================
+   GREENHARVEST AVOCADO FARM SYSTEM
+   FORM STYLES
+   ===================================================== */
+
+
+/* =====================================================
+   FORM CONTAINER
+   ===================================================== */
+
+.form-container {
+    width: 90%;
+    max-width: 550px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1,
+.form-container h2 {
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 25px;
+}
+
+.form-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   FORM GROUP
+   ===================================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.1);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* =====================================================
+   CHECKBOX AND RADIO BUTTONS
+   ===================================================== */
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input,
+.radio-group input {
+    width: auto;
+}
+
+.checkbox-group label,
+.radio-group label {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+/* =====================================================
+   FORM BUTTON
+   ===================================================== */
+
+.form-submit {
+    width: 100%;
+    padding: 13px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.form-submit:hover {
+    background: #1b5e20;
+}
+
+
+/* =====================================================
+   FORM LINKS
+   ===================================================== */
+
+.form-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-links a {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.form-links a:hover {
+    color: #1b5e20;
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   LOGIN FORM
+   ===================================================== */
+
+.login-container {
+    width: 90%;
+    max-width: 450px;
+    margin: 60px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1,
+.login-container h2 {
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 25px;
+}
+
+.login-container .form-group {
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   REGISTER FORM
+   ===================================================== */
+
+.register-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h1,
+.register-container h2 {
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   TWO-COLUMN FORM
+   ===================================================== */
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* =====================================================
+   PAYMENT FORM
+   ===================================================== */
+
+.payment-container {
+    width: 90%;
+    max-width: 650px;
+    margin: 60px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h1,
+.payment-container h2 {
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 25px;
+}
+
+.payment-summary {
+    background: #f1f8e9;
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.payment-summary h3 {
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.payment-summary p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   PAYMENT METHODS
+   ===================================================== */
+
+.payment-methods {
+    margin-bottom: 25px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 7px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-method:hover {
+    border-color: #2e7d32;
+    background: #f1f8e9;
+}
+
+.payment-method input {
+    width: auto;
+}
+
+.payment-method label {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   SEARCH FORM
+   ===================================================== */
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.search-form input:focus {
+    border-color: #2e7d32;
+}
+
+
+/* =====================================================
+   FORM ALERTS
+   ===================================================== */
+
+.form-error {
+    background: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #c62828;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form-success {
+    background: #e8f5e9;
+    color: #1b5e20;
+    border-left: 4px solid #2e7d32;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   REQUIRED FIELD
+   ===================================================== */
+
+.required {
+    color: #c62828;
+}
+
+
+/* =====================================================
+   MOBILE FORM STYLES
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+    .form-container,
+    .login-container,
+    .register-container,
+    .payment-container {
+        width: 94%;
+        padding: 25px 20px;
+        margin: 35px auto;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+}

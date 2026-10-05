@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - GreenHarvest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel=stylesheet href=css/responsive.css>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">GreenHarvest</a>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="seedlings.html">Seedlings</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="marketplace.html">Market</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <a href="dashboard.html" class="btn">
+            Dashboard
+        </a>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <!-- Page Header -->
+    <section class="page-header">
+
+        <h1>My Profile</h1>
+
+        <p>
+            View and manage your GreenHarvest account information.
+        </p>
+
+    </section>
+
+
+    <!-- Profile Section -->
+    <section class="profile-container">
+
+        <!-- Profile Summary -->
+        <div class="profile-card">
+
+            <div class="profile-avatar">
+                <span>👤</span>
+            </div>
+
+            <h2 id="profileName">
+                User Name
+            </h2>
+
+            <p id="profileRole">
+                Farmer
+            </p>
+
+            <p id="profileEmail">
+                user@example.com
+            </p>
+
+        </div>
+
+
+        <!-- Profile Form -->
+        <div class="form-section">
+
+            <form id="profileForm">
+
+                <h2>Personal Information</h2>
+
+
+                <!-- Full Name -->
+                <label for="name">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- Email -->
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+
+                <!-- Phone -->
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                >
+
+
+                <!-- Role -->
+                <label for="role">
+                    Account Type
+                </label>
+
+                <input
+                    type="text"
+                    id="role"
+                    name="role"
+                    value="Farmer"
+                    readonly
+                >
+
+
+                <!-- County -->
+                <label for="county">
+                    County
+                </label>
+
+                <input
+                    type="text"
+                    id="county"
+                    name="county"
+                    placeholder="Enter your county"
+                >
+
+
+                <!-- Address -->
+                <label for="address">
+                    Address
+                </label>
+
+                <textarea
+                    id="address"
+                    name="address"
+                    rows="4"
+                    placeholder="Enter your address"
+                ></textarea>
+
+
+                <!-- Save Button -->
+                <button
+                    type="submit"
+                    class="btn"
+                >
+                    Save Changes
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Account Settings -->
+    <section class="info-section">
+
+        <h2>Account Settings</h2>
+
+        <div class="info-grid">
+
+            <div>
+                <h3>Change Password</h3>
+
+                <p>
+                    Update your account password to keep your account secure.
+                </p>
+
+                <a href="#" class="btn">
+                    Change Password
+                </a>
+            </div>
+
+
+            <div>
+                <h3>Account Security</h3>
+
+                <p>
+                    Manage your account security and login information.
+                </p>
+
+                <a href="#" class="btn">
+                    Security Settings
+                </a>
+            </div>
+
+
+            <div>
+                <h3>Account Status</h3>
+
+                <p>
+                    Your account is currently active.
+                </p>
+
+                <span class="status">
+                    Active
+                </span>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        &copy; 2026 GreenHarvest Avocado Company.
+        All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- Profile JavaScript -->
+<script src="js/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocado Market - GreenHarvest Avocado Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel=stylesheet href=css/responsive.css>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">GreenHarvest Avocado Company</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="seedlings.html">Seedlings</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="avocado-marketplace.html">Market</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Avocado Market</h1>
+    <p>
+        Connect avocado farmers with buyers and access current avocado
+        market information.
+    </p>
+</section>
+
+<section class="info-section">
+
+    <h2>Current Market Prices</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Hass</h3>
+            <p>Estimated Price</p>
+            <h2>KES 120 / Kg</h2>
+            <p>Premium export-quality variety.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Fuerte</h3>
+            <p>Estimated Price</p>
+            <h2>KES 100 / Kg</h2>
+            <p>Popular avocado variety for local and regional markets.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Pinkerton</h3>
+            <p>Estimated Price</p>
+            <h2>KES 110 / Kg</h2>
+            <p>High-quality variety suitable for different markets.</p>
+        </div>
+
+    </div>
+
+    <p>
+        <strong>Note:</strong> Market prices may change depending on quality,
+        quantity, season, location and buyer demand.
+    </p>
+
+</section>
+
+<section class="info-section">
+
+    <h2>Available Avocados</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Hass Avocado</h3>
+            <p>Available Quantity: 2,500 Kg</p>
+            <p>Price: KES 120/Kg</p>
+            <p>Location: Embu</p>
+            <button class="btn">Contact Seller</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Fuerte Avocado</h3>
+            <p>Available Quantity: 1,800 Kg</p>
+            <p>Price: KES 100/Kg</p>
+            <p>Location: Meru</p>
+            <button class="btn">Contact Seller</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Pinkerton Avocado</h3>
+            <p>Available Quantity: 1,200 Kg</p>
+            <p>Price: KES 110/Kg</p>
+            <p>Location: Murang'a</p>
+            <button class="btn">Contact Seller</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="form-section">
+
+    <h2>List Your Avocados for Sale</h2>
+
+    <form id="avocadoMarketForm">
+
+        <label for="farmerName">Farmer Name</label>
+        <input type="text" id="farmerName" name="farmerName" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="farmLocation">Farm Location</label>
+        <input type="text" id="farmLocation" name="farmLocation" required>
+
+        <label for="variety">Avocado Variety</label>
+        <select id="variety" name="variety" required>
+            <option value="">-- Select Variety --</option>
+            <option value="hass">Hass</option>
+            <option value="fuerte">Fuerte</option>
+            <option value="pinkerton">Pinkerton</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="quantity">Quantity Available (Kg)</label>
+        <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            required
+        >
+
+        <label for="price">Expected Price per Kg (KES)</label>
+        <input
+            type="number"
+            id="price"
+            name="price"
+            min="1"
+            required
+        >
+
+        <label for="harvestDate">Expected Harvest Date</label>
+        <input
+            type="date"
+            id="harvestDate"
+            name="harvestDate"
+        >
+
+        <label for="quality">Produce Quality</label>
+        <select id="quality" name="quality">
+            <option value="">-- Select Quality --</option>
+            <option value="export">Export Quality</option>
+            <option value="grade-a">Grade A</option>
+            <option value="grade-b">Grade B</option>
+            <option value="local">Local Market</option>
+        </select>
+
+        <label for="description">Additional Information</label>
+        <textarea
+            id="description"
+            name="description"
+            rows="5"
+            placeholder="Describe your produce..."
+        ></textarea>
+
+        <button type="submit" class="btn">
+            List Produce for Sale
+        </button>
+
+        <p id="marketMessage"></p>
+
+    </form>
+
+</section>
+
+<section class="info-section">
+
+    <h2>How the Avocado Market Works</h2>
+
+    <div class="info-grid">
+
+        <div>
+            <h3>1. Farmer Lists Produce</h3>
+            <p>
+                Farmers provide information about their avocado variety,
+                quantity, quality and expected price.
+            </p>
+        </div>
+
+        <div>
+            <h3>2. Buyers Browse</h3>
+            <p>
+                Buyers can view available avocado produce and contact
+                farmers.
+            </p>
+        </div>
+
+        <div>
+            <h3>3. Order is Placed</h3>
+            <p>
+                The buyer selects the desired produce and places an order.
+            </p>
+        </div>
+
+        <div>
+            <h3>4. Delivery</h3>
+            <p>
+                The produce is prepared and delivered to the agreed
+                destination.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 GreenHarvest Avocado Company. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Services - GreenHarvest Avocado Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel=stylesheet href=css/responsive.css>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">GreenHarvest Avocado Company</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="seedlings.html">Seedlings</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="marketplace.html">Market</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Farm Services</h1>
+    <p>Professional farm services to help you establish and maintain a healthy avocado farm.</p>
+</section>
+
+<section class="info-section">
+
+    <h2>Our Farm Services</h2>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <h3>Land Preparation</h3>
+            <p>
+                Professional land preparation before planting avocado trees,
+                including clearing, digging and field preparation.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Planting Services</h3>
+            <p>
+                Assistance with proper avocado seedling planting, spacing,
+                planting holes and establishment.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Pruning</h3>
+            <p>
+                Proper pruning to improve tree structure, sunlight penetration,
+                air circulation and fruit production.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Spraying</h3>
+            <p>
+                Professional application of approved pest and disease control
+                products according to agronomic recommendations.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Weed Management</h3>
+            <p>
+                Effective weed control to reduce competition for nutrients,
+                water and sunlight.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Fertilizer Application</h3>
+            <p>
+                Assistance with proper fertilizer application based on the
+                needs and growth stage of your avocado trees.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Harvesting</h3>
+            <p>
+                Professional harvesting services that help reduce fruit damage
+                and maintain produce quality.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Farm Maintenance</h3>
+            <p>
+                General farm maintenance including tree care, sanitation,
+                field inspection and farm improvement.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="form-section">
+
+    <h2>Request a Farm Service</h2>
+
+    <form id="farmServiceForm">
+
+        <label for="farmerName">Farmer Name</label>
+        <input type="text" id="farmerName" name="farmerName" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="farmLocation">Farm Location</label>
+        <input type="text" id="farmLocation" name="farmLocation" required>
+
+        <label for="farmSize">Farm Size (Acres)</label>
+        <input type="number" id="farmSize" name="farmSize" min="0" step="0.1" required>
+
+        <label for="serviceType">Select Service</label>
+        <select id="serviceType" name="serviceType" required>
+            <option value="">-- Select Service --</option>
+            <option value="land-preparation">Land Preparation</option>
+            <option value="planting">Planting</option>
+            <option value="pruning">Pruning</option>
+            <option value="spraying">Spraying</option>
+            <option value="weed-management">Weed Management</option>
+            <option value="fertilizer-application">Fertilizer Application</option>
+            <option value="harvesting">Harvesting</option>
+            <option value="farm-maintenance">Farm Maintenance</option>
+        </select>
+
+        <label for="preferredDate">Preferred Service Date</label>
+        <input type="date" id="preferredDate" name="preferredDate">
+
+        <label for="description">Additional Information</label>
+        <textarea
+            id="description"
+            name="description"
+            rows="5"
+            placeholder="Describe the service you need..."
+        ></textarea>
+
+        <button type="submit" class="btn">Submit Service Request</button>
+
+        <p id="farmServiceMessage"></p>
+
+    </form>
+
+</section>
+
+<section class="info-section">
+
+    <h2>Why Use Our Farm Services?</h2>
+
+    <div class="info-grid">
+
+        <div>
+            <h3>Experienced Personnel</h3>
+            <p>
+                Our services are designed to follow good agricultural practices
+                for avocado production.
+            </p>
+        </div>
+
+        <div>
+            <h3>Better Farm Management</h3>
+            <p>
+                Proper farm activities can improve tree health, productivity
+                and overall farm performance.
+            </p>
+        </div>
+
+        <div>
+            <h3>Convenient Service Requests</h3>
+            <p>
+                Farmers can submit service requests through the platform and
+                receive assistance from the farm team.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 GreenHarvest Avocado Company. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
