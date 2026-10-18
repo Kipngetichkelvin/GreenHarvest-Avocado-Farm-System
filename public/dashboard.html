@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - GreenHarvest</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel=stylesheet href=css/responsive.css>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">GreenHarvest</a>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="seedlings.html">Seedlings</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="marketplace.html">Market</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <a href="dashboard.html" class="btn">
+            Dashboard
+        </a>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <h1>Dashboard</h1>
+        <p>
+            Taking you to your dashboard...
+        </p>
+    </section>
+
+    <section class="info-section">
+        <div class="info-grid">
+            <div>
+                <h3>Redirecting</h3>
+                <p>
+                    Your dashboard is chosen automatically from the role on your
+                    GreenHarvest account. If nothing happens, sign in again.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+
+    <p>
+        &copy; 2026 GreenHarvest Avocado Company.
+        All rights reserved.
+    </p>
+
+</footer>
+
+<!-- Session store, then role router -->
+<script src="js/api.js"></script>
+<script>
+(function () {
+    "use strict";
+
+    var api = window.GreenHarvestAPI;
+
+    function goToLogin() {
+        window.location.href = "login.html";
+    }
+
+    if (!api || !api.getToken()) {
+        goToLogin();
+        return;
+    }
+
+    var user = api.getStoredUser() || {};
+    var role = user.role;
+
+    if (role === "admin") {
+        window.location.href = "admin-dashboard.html";
+    } else if (role === "agronomist") {
+        window.location.href = "agronomist-dashboard.html";
+    } else if (role === "buyer") {
+        window.location.href = "buyer-dashboard.html";
+    } else {
+        window.location.href = "farmer-dashboard.html";
+    }
+})();
+</script>
+
+</body>
+</html>

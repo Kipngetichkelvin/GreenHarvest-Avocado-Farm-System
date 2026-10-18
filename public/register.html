@@ -1,307 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>Register | GreenHarvest Avocado Farm System</title>
 
-    <title>Register - GreenHarvest</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel=stylesheet href=css/responsive.css>
-    <link rel=stylesheet href=css/form.css>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body>
+<body class="auth-page">
 
-
-    <!-- Navigation -->
-    <header>
+    <!-- HEADER -->
+    <header class="auth-header">
 
         <nav class="navbar">
 
             <div class="logo">
-
                 <a href="index.html">
-                    GreenHarvest
+                    <span class="logo-icon">🥑</span>
+                    <span class="logo-text">GreenHarvest</span>
                 </a>
-
             </div>
-
 
             <ul class="nav-links">
 
                 <li>
-                    <a href="index.html">
-                        Home
-                    </a>
+                    <a href="index.html">Home</a>
                 </li>
 
                 <li>
-                    <a href="seedlings.html">
-                        Seedlings
-                    </a>
+                    <a href="seedlings.html">Seedlings</a>
                 </li>
 
                 <li>
-                    <a href="services.html">
-                        Services
-                    </a>
+                    <a href="services.html">Services</a>
                 </li>
 
                 <li>
-                    <a href="marketplace.html">
-                        Market
-                    </a>
+                    <a href="marketplace.html">Market</a>
                 </li>
 
                 <li>
-                    <a href="about.html">
-                        About
-                    </a>
+                    <a href="about.html">About</a>
                 </li>
 
                 <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
+                    <a href="contact.html">Contact</a>
                 </li>
 
             </ul>
+
+            <div class="nav-actions">
+
+                <a href="login.html" class="nav-btn login-btn">
+                    Login
+                </a>
+
+                <a href="register.html" class="nav-btn register-btn">
+                    Register
+                </a>
+
+            </div>
 
         </nav>
 
     </header>
 
 
-    <!-- Registration -->
-    <main>
+    <!-- MAIN -->
+    <main class="auth-main">
 
-        <section class="auth-section">
+        <div class="auth-container">
 
-            <div class="auth-container register-container">
+            <!-- LEFT INFORMATION -->
+            <section class="auth-info">
 
+                <div class="auth-info-content">
 
-                <div class="auth-header">
+                    <span class="auth-tag">
+                        Join GreenHarvest
+                    </span>
 
-                    <h1>Create Your Account</h1>
+                    <h1>
+                        Start Growing<br>
+                        With Us.
+                    </h1>
 
                     <p>
-                        Join GreenHarvest and access
-                        our agricultural services.
+                        Create your GreenHarvest account and
+                        access reliable avocado farming services,
+                        quality seedlings, farm management tools
+                        and a connected marketplace.
                     </p>
+
+
+                    <div class="auth-benefits">
+
+                        <div class="auth-benefit">
+
+                            <div class="benefit-symbol">
+                                🌱
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Quality Seedlings
+                                </strong>
+
+                                <span>
+                                    Choose from reliable avocado
+                                    seedling varieties.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="auth-benefit">
+
+                            <div class="benefit-symbol">
+                                👨‍🌾
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Farm Support
+                                </strong>
+
+                                <span>
+                                    Get access to farming services
+                                    and professional support.
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="auth-benefit">
+
+                            <div class="benefit-symbol">
+                                🥑
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Market Access
+                                </strong>
+
+                                <span>
+                                    Connect with buyers and grow
+                                    your avocado business.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
+            </section>
 
-                <form id="registerForm">
+
+            <!-- REGISTER FORM -->
+            <section class="auth-form-section">
+
+                <div class="auth-card">
+
+                    <div class="auth-card-header">
+
+                        <div class="auth-icon">
+                            📝
+                        </div>
+
+                        <h2>
+                            Create Account
+                        </h2>
+
+                        <p>
+                            Fill in your details to create your
+                            GreenHarvest account.
+                        </p>
+
+                    </div>
 
 
-                    <!-- Full Name -->
-                    <div class="form-group">
+                    <form id="registerForm" class="auth-form">
 
-                        <label for="name">
-                            Full Name
-                        </label>
+                        <!-- FULL NAME -->
+                        <div class="form-group">
 
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your full name"
-                            required
+                            <label for="registerName">
+                                Full Name
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    👤
+                                </span>
+
+                                <input
+                                    type="text"
+                                    id="registerName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="form-group">
+
+                            <label for="registerEmail">
+                                Email Address
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    ✉
+                                </span>
+
+                                <input
+                                    type="email"
+                                    id="registerEmail"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHONE -->
+                        <div class="form-group">
+
+                            <label for="registerPhone">
+                                Phone Number
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    📱
+                                </span>
+
+                                <input
+                                    type="tel"
+                                    id="registerPhone"
+                                    name="phone"
+                                    placeholder="e.g. 0712 345 678"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ROLE -->
+                        <div class="form-group">
+
+                            <label for="registerRole">
+                                Account Type
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    👨‍🌾
+                                </span>
+
+                                <select
+                                    id="registerRole"
+                                    name="role"
+                                    required
+                                    style="padding-left: 45px;"
+                                >
+
+                                    <option value="">
+                                        Select account type
+                                    </option>
+
+                                    <option value="farmer">
+                                        Farmer
+                                    </option>
+
+                                    <option value="buyer">
+                                        Buyer
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="form-group">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    🔒
+                                </span>
+
+                                <input
+                                    type="password"
+                                    id="registerPassword"
+                                    name="password"
+                                    placeholder="Create a password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="registerPasswordToggle"
+                                >
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    🔐
+                                </span>
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    placeholder="Confirm your password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="confirmPasswordToggle"
+                                >
+                                    👁
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TERMS -->
+                        <div class="remember-row">
+
+                            <label class="checkbox-label">
+
+                                <input
+                                    type="checkbox"
+                                    id="terms"
+                                    required
+                                >
+
+                                <span>
+                                    I agree to the GreenHarvest
+                                    terms and conditions.
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+                        <div
+                            id="registerMessage"
+                            class="auth-message"
+                        ></div>
+
+
+                        <!-- REGISTER BUTTON -->
+                        <button
+                            type="submit"
+                            class="auth-submit"
                         >
+                            Create Account
+                        </button>
 
+                    </form>
+
+
+                    <!-- DIVIDER -->
+                    <div class="auth-divider">
+                        <span>OR</span>
                     </div>
 
 
-                    <!-- Email -->
-                    <div class="form-group">
+                    <!-- LOGIN LINK -->
+                    <div class="auth-register">
 
-                        <label for="email">
-                            Email Address
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- Phone -->
-                    <div class="form-group">
-
-                        <label for="phone">
-                            Phone Number
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="e.g. 0712345678"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- Role -->
-                    <div class="form-group">
-
-                        <label for="role">
-                            Account Type
-                        </label>
-
-                        <select
-                            id="role"
-                            name="role"
-                            required
-                        >
-
-                            <option value="">
-                                Select account type
-                            </option>
-
-                            <option value="farmer">
-                                Farmer
-                            </option>
-
-                            <option value="buyer">
-                                Buyer
-                            </option>
-
-                            <option value="agronomist">
-                                Agronomist
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <!-- Password -->
-                    <div class="form-group">
-
-                        <label for="password">
-                            Password
-                        </label>
-
-                        <input
-                            type="password"
-                            id="password"
-                            name="password"
-                            placeholder="Create a password"
-                            minlength="6"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- Confirm Password -->
-                    <div class="form-group">
-
-                        <label for="confirmPassword">
-                            Confirm Password
-                        </label>
-
-                        <input
-                            type="password"
-                            id="confirmPassword"
-                            name="confirmPassword"
-                            placeholder="Confirm your password"
-                            minlength="6"
-                            required
-                        >
-
-                    </div>
-
-
-                    <!-- Terms -->
-                    <div class="form-options">
-
-                        <label>
-
-                            <input
-                                type="checkbox"
-                                id="terms"
-                                required
-                            >
-
-                            I agree to the
-                            <a href="#">
-                                Terms and Conditions
-                            </a>
-
-                        </label>
-
-                    </div>
-
-
-                    <!-- Submit -->
-                    <button
-                        type="submit"
-                        class="btn btn-primary auth-button"
-                    >
-                        Create Account
-                    </button>
-
-
-                    <!-- Message -->
-                    <div
-                        id="registerMessage"
-                        class="form-message">
-                    </div>
-
-
-                </form>
-
-
-                <!-- Login -->
-                <div class="auth-footer">
-
-                    <p>
-                        Already have an account?
+                        <span>
+                            Already have an account?
+                        </span>
 
                         <a href="login.html">
-                            Login here
+                            Sign in
                         </a>
 
-                    </p>
+                    </div>
+
+
+                    <!-- SECURITY -->
+                    <div class="auth-security">
+                        🔒 Your personal information is
+                        protected and kept secure.
+                    </div>
 
                 </div>
 
-            </div>
+            </section>
 
-        </section>
+        </div>
 
     </main>
 
 
-    <!-- Footer -->
-    <footer>
+    <!-- FOOTER -->
+    <footer class="auth-footer">
 
-        <div class="footer-bottom">
-
-            <p>
-                &copy; 2026 GreenHarvest Avocado Company.
-            </p>
-
-        </div>
+        <p>
+            © 2026 GreenHarvest Avocado Farm System.
+            All rights reserved.
+        </p>
 
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- ================= REGISTER JAVASCRIPT ================= -->
+    <script src="js/api.js"></script>
     <script src="js/auth.js"></script>
 
 </body>

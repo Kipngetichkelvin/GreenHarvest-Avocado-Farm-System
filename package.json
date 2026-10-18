@@ -1,0 +1,43 @@
+{
+  "name": "greenharvest-avocado-farm-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GreenHarvest Avocado Farm System - Node/Express REST API powering the GreenHarvest avocado farm management, marketplace, orders, payments and agronomy services platform.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "init-db": "node scripts/init-db.js",
+    "smoke-test": "node scripts/smoke-test.js"
+  },
+  "keywords": [
+    "avocado",
+    "farm",
+    "agriculture",
+    "express",
+    "rest-api",
+    "marketplace",
+    "greenharvest"
+  ],
+  "author": "GreenHarvest",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
