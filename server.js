@@ -165,7 +165,10 @@ const BLOCKED = /(^|[/\\])(server\.js|database\.js|package(-lock)?\.json|\.env.*
 app.use(
   express.static(PUBLIC_DIR, {
     extensions: ["html"],
-    setHeaders(res) {
+    setHeaders(res, filePath) {
+      if (/\.jfif$/i.test(filePath)) {
+        res.setHeader("Content-Type", "image/jpeg");
+      }
       res.setHeader("X-Content-Type-Options", "nosniff");
     },
   })
@@ -177,7 +180,10 @@ app.use(
   express.static(__dirname, {
     index: "index.html",
     extensions: ["html"],
-    setHeaders(res) {
+    setHeaders(res, filePath) {
+      if (/\.jfif$/i.test(filePath)) {
+        res.setHeader("Content-Type", "image/jpeg");
+      }
       res.setHeader("X-Content-Type-Options", "nosniff");
     },
   })

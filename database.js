@@ -111,11 +111,13 @@ function seed() {
 
     const farmerId = userIds["farmer@greenharvest.co.ke"];
 
+    // Only use image files that actually exist in public/images/.
+    // See README / public/images/ for the real asset names.
     const products = [
-      ["Hass Avocado (Grade A)", "Fruit", "Hass", "Premium export-grade Hass avocados, freshly harvested.", 120, "kg", 850, "images/hass.jpg", farmerId],
-      ["Fuerte Avocado", "Fruit", "Fuerte", "Creamy Fuerte avocados ideal for local markets.", 95, "kg", 620, "images/fuerte.jpg", farmerId],
-      ["Jumbo Avocado", "Fruit", "Jumbo", "Large jumbo variety with a high oil content.", 140, "kg", 300, "images/jumbo.jpg", farmerId],
-      ["Organic Avocado Oil", "Processed", "Cold Pressed", "500ml bottle of cold-pressed avocado oil.", 750, "bottle", 120, "images/oil.jpg", farmerId],
+      ["Hass Avocado (Grade A)", "Fruit", "Hass", "Premium export-grade Hass avocados, freshly harvested.", 120, "kg", 850, "images/marketplace.jpg", farmerId],
+      ["Fuerte Avocado", "Fruit", "Fuerte", "Creamy Fuerte avocados ideal for local markets.", 95, "kg", 620, "images/marketplace.jpg", farmerId],
+      ["Jumbo Avocado", "Fruit", "Jumbo", "Large jumbo variety with a high oil content.", 140, "kg", 300, "images/marketplace.jpg", farmerId],
+      ["Organic Avocado Oil", "Processed", "Cold Pressed", "500ml bottle of cold-pressed avocado oil.", 750, "bottle", 120, "images/marketplace.jpg", farmerId],
     ];
 
     for (const p of products) {
@@ -133,9 +135,9 @@ function seed() {
     }
 
     const seedlings = [
-      ["Hass Grafted Seedling", "Hass", "Disease-resistant grafted Hass seedling.", 250, "seedling", 1500, "images/hass-seedling.jpg", farmerId],
-      ["Fuerte Grafted Seedling", "Fuerte", "Hardy Fuerte seedling suited to highland farms.", 220, "seedling", 900, "images/fuerte-seedling.jpg", farmerId],
-      ["Pinkerton Seedling", "Pinkerton", "Early-bearing Pinkerton seedling.", 240, "seedling", 700, "images/pinkerton-seedling.jpg", farmerId],
+      ["Hass Grafted Seedling", "Hass", "Disease-resistant grafted Hass seedling.", 250, "seedling", 1500, "images/seedlings.jpg", farmerId],
+      ["Fuerte Grafted Seedling", "Fuerte", "Hardy Fuerte seedling suited to highland farms.", 220, "seedling", 900, "images/seedlings.jpg", farmerId],
+      ["Pinkerton Seedling", "Pinkerton", "Early-bearing Pinkerton seedling.", 240, "seedling", 700, "images/seedlings.jpg", farmerId],
     ];
 
     for (const s of seedlings) {
