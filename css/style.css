@@ -4485,3 +4485,156 @@ img {
     }
 
 }
+
+
+/* =========================================================
+   GREENHARVEST HOMEPAGE FARM IMAGE
+   ========================================================= */
+
+.hero-visual {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-photo-frame {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    flex: 1 1 320px;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #e8f2e5;
+    box-shadow: 0 18px 45px rgba(25, 70, 35, 0.18);
+}
+
+.hero-farm-image {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-image-caption {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    color: #173b25;
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 14px;
+}
+
+.hero-image-caption > span {
+    font-size: 30px;
+}
+
+.hero-image-caption strong {
+    display: block;
+    font-size: 16px;
+}
+
+.hero-image-caption p {
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-visual {
+        padding: 12px 0;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .hero-farm-image {
+        height: 300px;
+    }
+
+    .hero-photo-frame {
+        border-radius: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   INNER PAGE SPLIT HEROES (seedlings / services / marketplace)
+   Scoped with .hero-split so other .page-hero users are untouched
+   ========================================================= */
+
+.hero-split {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(28px, 4vw, 64px);
+    text-align: left;
+}
+
+.hero-split .page-hero-content,
+.hero-split .services-hero-content,
+.hero-split .market-hero-content {
+    flex: 1 1 420px;
+    max-width: 640px;
+    width: 100%;
+    margin: 0;
+}
+
+.hero-split .page-hero-visual {
+    flex: 1 1 380px;
+    max-width: 560px;
+    width: 100%;
+    padding: 40px 32px;
+}
+
+.hero-split .page-hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 420px;
+    min-height: 240px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.30);
+}
+
+
+@media (max-width: 900px) {
+
+    .hero-split {
+        display: block;
+        text-align: center;
+    }
+
+    .hero-split .page-hero-content,
+    .hero-split .services-hero-content,
+    .hero-split .market-hero-content {
+        margin: auto;
+        max-width: 1150px;
+    }
+
+    .hero-split .page-hero-visual {
+        padding: 0 30px 70px;
+        max-width: 100%;
+    }
+
+    .hero-split .page-hero-image {
+        height: 280px;
+        min-height: 0;
+    }
+
+}
